@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <style>
+        body {
+            margin-left:10px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+        .certificate {
+            text-align: center;
+            justify-content:left;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color:cadetblue;
+        }
+        p {
+            font-size: 16px;
+        }
+        strong{
+    color:chocolate;
+  }
+  .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn-class-name {
+            background-color: rgba(180, 255, 100, .2);
+            color: rgb(180, 255, 100);
+            border: 2px solid rgb(180, 255, 100);
+            border-radius: .5em;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: .5em 1em;
+            cursor: pointer;
+            outline: none;
+            transition: .3s;
+        }
+        .btn-class-name:hover {
+            background-color: rgba(180, 255, 100, .5);
+            box-shadow: 0 0 0 5px rgba(180, 255, 100, .4);
+        }
+    </style>
+</head>
+<body>
+
+<div class="certificate">
+    <h3 style="text-align: center;font-size: 40px;"><span style="font-size: 60px;text-align:right;color:green;">C</span>ertificates</h3>
+    <h2>Java Full Stack Web Development</h2>
+    <p><strong>From:</strong> Tap Academy</p>
+    <p><strong>Duration:</strong> 05/2023 - 10/2023</p>
+    <p>I learned Front-end technologies like HTML, CSS, JavaScript and Back-end Technologies like Java and SQL.</p>
+</div>
+
+<div class="certificate">
+    <h2>Java Full Stack Internship</h2>
+    <p><strong>From:</strong> BRAIN O VISION SOLUTIONS (INDIA) PVT LTD</p>
+    <p><strong>Duration:</strong> 08/2022 - 09/2022</p>
+    <p>During this internship, I gained practical experience in Java Full Stack development.</p>
+</div>
+<div class="btn-container">
+    <button class="btn-class-name" onclick="previous()">Previous</button>
+    <button class="btn-class-name" onclick="next()">Next</button>
+</div>
+<script>
+    // Function to navigate to the previous page
+    function previous() {
+        window.location.href="Education.html";
+    }
+    // Function to navigate to the next page
+    function next() {
+        window.location.href = "projects.html"; // Replace "certificates.html" with the URL of the next page
+    }
+</script>
+</body>
+</html>

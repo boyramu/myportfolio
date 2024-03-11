@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+            color:white;
+            text-align: center;
+        }
+        h1 {
+            color:cadetblue;
+            border:2px solid white;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 10px;
+        }
+        table {
+            border: 2px solid black;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            border: 2px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            color:chocolate;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn-class-name {
+            background-color: rgba(180, 255, 100, .2);
+            color: rgb(180, 255, 100);
+            border: 2px solid rgb(180, 255, 100);
+            border-radius: .5em;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: .5em 1em;
+            cursor: pointer;
+            outline: none;
+            transition: .3s;
+        }
+        .btn-class-name:hover {
+            background-color: rgba(180, 255, 100, .5);
+            box-shadow: 0 0 0 5px rgba(180, 255, 100, .4);
+        }
+    </style>
+</head>
+<body>
+    <h1>EDUCATION</h1>
+   
+    <table>
+        <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Duration</th>
+            <th>Location</th>
+            <th>Percentage/CGPA</th>
+            <th>Specialization</th>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>Kuppam Engineering College</td>
+            <td>(08/2019 - 05/2023)</td>
+            <td>Kupppam, A.P</td>
+            <td>Percentage: 74%<br>CGPA: 7.79</td>
+            <td>Computer Science and Engineering (CSE)</td>
+        </tr>
+        <tr>
+            <td>Intermediate</td>
+            <td>A.P.Model Junior College Santhipuram</td>
+            <td>(06/2017 - 04/2019)</td>
+            <td>Santhipuram, Kuppam,A.P</td>
+            <td>CGPA: 9.79</td>
+            <td>MPC</td>
+        </tr>
+        <tr>
+            <td>SSC</td>
+            <td>Z.P.High School Dandikuppam</td>
+            <td>(06/2016 - 04/2017)</td>
+            <td>Dandikuppam, Santhipuram,Kuppam,A.P</td>
+            <td>CGPA: 9.0</td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="btn-container">
+        <button class="btn-class-name" onclick="previous()">Previous</button>
+        <button class="btn-class-name" onclick="next()">Next</button>
+    </div>
+    <script>
+        // Function to navigate to the previous page
+        function previous() {
+            window.location.href="about.html";
+        }
+        // Function to navigate to the next page
+        function next() {
+            window.location.href = "certificates.html"; // Replace "certificates.html" with the URL of the next page
+        }
+    </script>
+</body>
+</html>

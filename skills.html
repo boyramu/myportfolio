@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Skills</title>
+<style>
+  body {
+    background-color: black;
+            color:white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    margin-left: 30%;
+    border:2px solid white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  h2 {
+    color:darkorange;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn-class-name {
+            background-color: rgba(180, 255, 100, .2);
+            color: rgb(180, 255, 100);
+            border: 2px solid rgb(180, 255, 100);
+            border-radius: .5em;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: .5em 1em;
+            cursor: pointer;
+            outline: none;
+            transition: .3s;
+        }
+        .btn-class-name:hover {
+            background-color: rgba(180, 255, 100, .5);
+            box-shadow: 0 0 0 5px rgba(180, 255, 100, .4);
+        }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1><span style="color:red">T</span>echnical <span style="color:chartreuse">S</span>kills</h1>
+  <h2>Programming Languages:</h2>
+  <ul>
+    <li>Core Java</li>
+    <li>JDBC</li>
+    <li>JavaEE</li>
+    <li>Basic Python</li>
+    <li>C</li>
+  </ul>
+  <h2>Java Technologies:</h2>
+  <ul>
+    <li>Collections</li>
+    <li>Advanced Java Servlets</li>
+    <li>JSP</li>
+    <li>JSP Servlets</li>
+    <li>OOPs</li>
+  </ul>
+  <h2>Web Development:</h2>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+  <h2>Database:</h2>
+  <ul>
+    <li>MySQL</li>
+    <li>SQL</li>
+  </ul>
+</div>
+<div class="btn-container">
+    <button class="btn-class-name" onclick="previous()">Previous</button>
+    <button class="btn-class-name" onclick="next()">Next</button>
+</div>
+<script>
+    // Function to navigate to the previous page
+    function previous() {
+        window.location.href="workexperience.html";
+    }
+    // Function to navigate to the next page
+    function next() {
+        window.location.href = "contact.html"; // Replace "certificates.html" with the URL of the next page
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Profile</title>
+<style>
+  body {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+  
+    color:white;
+    max-width: 650px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: chocolate;
+  }
+  p {
+    
+    margin-top:-40px;
+  }
+  .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .btn-class-name {
+    --color: 180,255, 100;
+    border-radius: .5em;
+    transition: .3s;
+    background-color: rgba(var(--color), .2);
+    color: rgb(var(--color));
+    fill: rgb(var(--color));
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border: 2px solid rgb(var(--color));
+    box-shadow: 0 0 10px rgba(var(--color), .4);
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: .5em 1em;
+  }
+
+  .btn-class-name:hover {
+    box-shadow: 0 0 0 5px rgba(var(--color), .5);
+  }
+
+  .btn-class-name span {
+    transform: scale(.8);
+    transition: .3s;
+  }
+
+  .btn-class-name:hover span {
+    transform: scale(1);
+  }
+
+  .btn-class-name svg {
+    font-size: 0;
+    transform: scale(0.5) translateX(0%) rotate(-180deg);
+    transition: .3s;
+  }
+
+  .btn-class-name:hover svg {
+    font-size: 20px;
+    transform: scale(1) translateX(20%) rotate(0deg);
+  }
+
+  .btn-class-name:active {
+    transition: 0s;
+    box-shadow: 0 0 0 5px rgb(var(--color));
+  }
+
+  /* Change color of the link within the button */
+  .btn-class-name a {
+    color: green;
+    text-decoration: none; /* Remove underline */
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>About Me...</h1>
+  <p>I'm proficient and highly skilled in full-stack web development, leveraging expertise in front-end and back-end technologies to proficiently design, implement, and maintain dynamic web applications.
+  Driven by a relentless pursuit of professional growth, I actively seek challenging opportunities to enhance creativity and expand knowledge.
+  <br><br>Committed to exceeding expectations, I am dedicated to delivering exceptional results and earning the satisfaction of superiors through my work.</p>
+
+  <div class="btn-container">
+    <button class="btn-class-name" onclick="previous()">Previous</button>
+    <button class="btn-class-name" onclick="next()">Next</button>
+</div>
+<script>
+    // Function to navigate to the previous page
+    function previous() {
+        window.location.href="index.html";
+    }
+    // Function to navigate to the next page
+    function next() {
+        window.location.href = "Education.html"; // Replace "certificates.html" with the URL of the next page
+    }
+</script>
+  </div>
+</div>
+</body>
+</html>

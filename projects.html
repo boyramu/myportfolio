@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Projects</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+        .project {
+            margin-bottom: 20px;
+            margin-left: 40px;
+        }
+        h2 {
+            color:cadetblue;
+        }
+        p {
+            font-size: 16px;
+           
+        }
+        strong{
+            color:orange;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn-class-name {
+            background-color: rgba(180, 255, 100, .2);
+            color: rgb(180, 255, 100);
+            border: 2px solid rgb(180, 255, 100);
+            border-radius: .5em;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: .5em 1em;
+            cursor: pointer;
+            outline: none;
+            transition: .3s;
+        }
+        .btn-class-name:hover {
+            background-color: rgba(180, 255, 100, .5);
+            box-shadow: 0 0 0 5px rgba(180, 255, 100, .4);
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center;font-size: 40px;"><span style="font-size: 60px;text-align:right;color:green;">P</span>rojects</h3>
+<div class="project">
+    <h2>Online Resume Builder</h2>
+    <p><strong >Duration:</strong> 02/2022 - 05/2022</p>
+    <p>An Online Resume Builder is a web application developed to simplify the task of creating a resume for individuals.<br> Users can get their resume in PDF format easily without any problem.</p>
+    <p><strong >Technologies used:</strong> HTML, CSS, PHP</p>
+</div>
+
+<div class="project">
+    <h2>Face Mask Detection using Deep Learning</h2>
+    <p><strong >Duration:</strong> 06/2022 - 10/2022</p>
+    <p>The main objective of this project is to identify whether a person is wearing a mask or not properly.<br> Deep learning techniques, specifically the Convolutional Neural Network (CNN) algorithm, are employed for this task.</p>
+    <p><strong >Technologies used:</strong> Python, CNN algorithm</p>
+</div>
+
+<div class="project">
+    <h2>Rainfall Prediction using MLR</h2>
+    <p><strong >Duration:</strong> 02/2023 - 05/2023</p>
+    <p>The main aim of this system is to predict rainfall in any country, aiding farmers in managing water resources and avoiding property loss. <br>This project utilizes the Multiple Linear Regression (MLR) algorithm.</p>
+    <p><strong >Technologies used:</strong> Multiple Linear Regression algorithm, Python</p>
+</div>
+
+<div class="project">
+    <h2>Vendor Management System (Internship Project)</h2>
+    <p><strong >Duration:</strong> 08/2022 - 09/2022</p>
+    <p>The Vendor Management System (VMS) is an internship project designed to streamline and enhance the process of managing vendors within an organization. <br>The system provides a user-friendly interface for adding, deleting, and updating vendor information, facilitating efficient vendor management.</p>
+    <p><strong >Technologies used:</strong>Java,JSP,HTML,CSS,JDBC,SQL,JAVAEE</p>
+</div>
+<div class="btn-container">
+    <button class="btn-class-name" onclick="previous()">Previous</button>
+    <button class="btn-class-name" onclick="next()">Next</button>
+</div>
+<script>
+    // Function to navigate to the previous page
+    function previous() {
+        window.location.href="certificates.html";
+    }
+    // Function to navigate to the next page
+    function next() {
+        window.location.href = "workexperience.html"; // Replace "certificates.html" with the URL of the next page
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Information</title>
+<style>
+  body {
+    color:white;
+    background-color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color:crimson;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn-class-name {
+            background-color: rgba(180, 255, 100, .2);
+            color: rgb(180, 255, 100);
+            border: 2px solid rgb(180, 255, 100);
+            border-radius: .5em;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: .5em 1em;
+            cursor: pointer;
+            outline: none;
+            transition: .3s;
+        }
+        .btn-class-name:hover {
+            background-color: rgba(180, 255, 100, .5);
+            box-shadow: 0 0 0 5px rgba(180, 255, 100, .4);
+        }
+</style>
+</head>
+<body>
+    <h1>Contact Information</h1>
+<div class="container">
+  
+  <p>Email: <a href="mailto:pathilakshmi2001@gmail.com">pathilakshmi2001@gmail.com</a></p>
+  <p>Phone: 6302958012</p>
+  <p>Address: 123, Dandikuppam(v), Santhipuram(M), Kuppam, Chittoor(dist), A.P, pincode-517425, Kuppam, India</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/k-lakshmipathi-0a45b1257" target="_blank">linkedin.com/in/k-lakshmipathi-0a45b1257</a></p>
+</div>
+<div class="btn-container">
+    <button class="btn-class-name" onclick="previous()">Previous</button>
+    <button class="btn-class-name" onclick="next()">Next</button>
+</div>
+<script>
+    // Function to navigate to the previous page
+    function previous() {
+        window.location.href="skills.html";
+    }
+    // Function to navigate to the next page
+    function next() {
+        window.location.href = "index.html"; // Replace "certificates.html" with the URL of the next page
+    }
+</script>
+
+</body>
+</html>

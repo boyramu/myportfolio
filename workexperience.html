@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work Experience</title>
+<style>
+  body {
+    background-color: black;
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin: 0;
+            padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size:40px;
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h2 {
+    
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color:darkorange;
+  }
+  h3{
+    display: inline-block;
+    padding:10px;
+    box-sizing: border-box;
+    color:darkorange;
+    background-color:white;
+    border:2px solid black;
+    border-radius: 20px;
+    margin-left:10px;
+    margin-right:150px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  strong{
+    color:lightblue
+  }
+  #com
+  {
+    display: inline-block;
+    padding:10px;
+    box-sizing: border-box;
+    background-color:white;
+    color:black;
+    border:1px solid;
+    border-radius:20px;
+    padding-bottom:4px;
+    padding-left:10px;
+  }
+  ul{
+    list-style-type:disc;
+    padding: 0;
+  }
+  .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .btn-class-name {
+            background-color: rgba(180, 255, 100, .2);
+            color: rgb(180, 255, 100);
+            border: 2px solid rgb(180, 255, 100);
+            border-radius: .5em;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: .5em 1em;
+            cursor: pointer;
+            outline: none;
+            transition: .3s;
+        }
+        .btn-class-name:hover {
+            background-color: rgba(180, 255, 100, .5);
+            box-shadow: 0 0 0 5px rgba(180, 255, 100, .4);
+        }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1><span style="color:green;font-size: 60px;">W</span>ork <span style="color: chocolate;font-size: 60px;">E</span>xperience</h1>
+  <h2 id="com">Company: BrainOvision Solutions Pvt. Ltd.</h2>
+  <p><strong>Position:</strong> Java Developer Intern</p>
+  <p><strong>Duration:</strong> 12th August 2022 - 26th September 2022</p>
+  <h2>Project: Vendor Management System (VMS) Internship Project</h2>
+  <h3>Responsibilities</h3>
+  <ul>
+    <li>Collaborated with team members to design and develop the Vendor Management System (VMS) internship project.</li>
+    <li>Utilized Java programming skills to create a user-friendly interface for managing vendor information.</li>
+    <li>Implemented functionalities for adding, deleting, and updating vendor data, ensuring efficient vendor management processes.</li>
+    <li>Participated in project meetings and discussions to enhance project functionalities and user experience.</li>
+  </ul>
+  <h3>Achievements</h3>
+  <ul>
+    <li>Successfully contributed to the development of the Vendor Management System (VMS), improving the efficiency of vendor management processes.</li>
+    <li>Demonstrated strong problem-solving skills and attention to detail in resolving project challenges.</li>
+    <li>Received positive feedback for dedication and commitment to project goals.</li>
+  </ul>
+</div>
+<div class="btn-container">
+    <button class="btn-class-name" onclick="previous()">Previous</button>
+    <button class="btn-class-name" onclick="next()">Next</button>
+</div>
+<script>
+    // Function to navigate to the previous page
+    function previous() {
+        window.location.href="projects.html";
+    }
+    // Function to navigate to the next page
+    function next() {
+        window.location.href = "skills.html"; // Replace "certificates.html" with the URL of the next page
+    }
+</script>
+
+</body>
+</html>
